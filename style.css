@@ -1,0 +1,171 @@
+
+*{box-sizing: border-box;margin: 0;}
+
+body{
+    background: hsl(0, 0%, 94%);
+}
+
+.calculator {
+    background: hsl(0, 0%, 100%);
+    width: 500px;
+    height: 370px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    translate: -50%-50%;
+    border-radius: 10px 10px 30% 10px;
+}
+
+.column {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+
+input {
+    width: 100px;
+    height: 40px;
+    border:  1px solid hsl(0, 0%, 86%);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Poppins-ExtraBold, sans-serif;
+    text-indent: 3px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    color: hsl(0, 0%, 8%);
+}
+
+input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+
+}
+
+button {
+    position: absolute;
+    background:  hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    right: 0;
+    bottom: 0;
+    translate: -50%50%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 25px;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.form::after {
+    content: '';
+    width: 450px;
+    height: 0.1px;
+    background: hsl(0, 0%, 86%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    margin-top: 15px;
+}
+
+.para{
+    font-size: 40px;
+    font-family: Poppins-ExtraBoldItalic,sans-serif;
+    color: hsl(0, 0%, 8%);
+    margin-left: 30px;
+}
+
+span {
+    color:  hsl(259, 100%, 65%);
+
+}
+
+.empty {
+    font-size: 10px;
+    font-family: Poppins-Italic, serif;
+    color: hsl(0, 100%, 67%);
+
+}
+
+.empty-column > label{
+    color:  hsl(0, 100%, 67%);
+}
+
+.empty-column > input {
+    border-color:  hsl(0, 100%, 67%);
+}
+
+.non-empty-column > label {
+    color: hsl(0, 1%, 44%) !important;
+}
+
+.non-empty-column > input {
+    border-color:  hsl(0, 0%, 86%) !important;
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url("assets/fonts/Poppins-BoldItalic.ttf");
+}
+
+
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url("assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url("assets/fonts/Poppins-Italic.ttf");
+}
+
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("assets/fonts/Poppins-Regular.ttf");
+}
+

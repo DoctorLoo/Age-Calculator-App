@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="calculator">
+    <div class="form">
+        <div class="column column-day">
+            <label for="day">DAY</label>
+            <input type="text" name="day" id="day" placeholder="DD" value="">
+            <p class="empty"></p>
+        </div>
+        <div class="column column-month">
+            <label for="month">MONTH</label>
+            <input type="text" name="month" id="month" placeholder="MM" value="">
+            <p class="empty"></p>
+        </div>
+        <div class="column column-year">
+            <label for="year">YEAR</label>
+            <input type="text" name="year" id="year" placeholder="YYYY" value="">
+            <p class="empty"></p>
+        </div>
+        <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                    <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667
+        21.686 23 25.616 23 44"/>
+                </g>
+            </svg>
+        </button>
+    </div>
+    <div class="display">
+        <p class="para"><span class="years">- -</span> years</p>
+        <p class="para"><span class="months">- -</span> months</p>
+        <p class="para"><span class="days">- -</span> days</p>
+    </div>
+</div>
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Abdullah Alashhab</a>.
+</div>
+<script src="functionalities.js"></script>
+
+</body>
+</html>
