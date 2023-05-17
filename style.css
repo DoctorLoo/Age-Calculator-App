@@ -1,7 +1,10 @@
 
-*{box-sizing: border-box;margin: 0;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-body{
+body {
     background: hsl(0, 0%, 94%);
 }
 
@@ -11,8 +14,8 @@ body{
     height: 370px;
     position: absolute;
     left: 50%;
-    top:50%;
-    translate: -50%-50%;
+    top: 50%;
+    translate: -50% -50%;
     border-radius: 10px 10px 30% 10px;
 }
 
@@ -29,7 +32,7 @@ body{
 input {
     width: 100px;
     height: 40px;
-    border:  1px solid hsl(0, 0%, 86%);
+    border: 1px solid hsl(0, 0%, 86%);
     border-radius: 4px;
     cursor: pointer;
     font-family: Poppins-ExtraBold, sans-serif;
@@ -47,14 +50,14 @@ input:focus {
 
 button {
     position: absolute;
-    background:  hsl(259, 100%, 65%);
+    background: hsl(259, 100%, 65%);
     border: none;
     border-radius: 50%;
     width: 65px;
     height: 65px;
     right: 0;
     bottom: 0;
-    translate: -50%50%;
+    translate: -50% 50%;
     z-index: 1000;
     cursor: pointer;
     transition: all 250ms;
@@ -64,7 +67,7 @@ button:hover {
     background-color: hsl(0, 0%, 8%);
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -100,15 +103,15 @@ label {
     margin-top: 15px;
 }
 
-.para{
+.para {
     font-size: 40px;
-    font-family: Poppins-ExtraBoldItalic,sans-serif;
+    font-family: Poppins-ExtraBoldItalic, sans-serif;
     color: hsl(0, 0%, 8%);
     margin-left: 30px;
 }
 
 span {
-    color:  hsl(259, 100%, 65%);
+    color: hsl(259, 100%, 65%);
 
 }
 
@@ -119,12 +122,12 @@ span {
 
 }
 
-.empty-column > label{
-    color:  hsl(0, 100%, 67%);
+.empty-column > label {
+    color: hsl(0, 100%, 67%);
 }
 
 .empty-column > input {
-    border-color:  hsl(0, 100%, 67%);
+    border-color: hsl(0, 100%, 67%);
 }
 
 .non-empty-column > label {
@@ -132,7 +135,34 @@ span {
 }
 
 .non-empty-column > input {
-    border-color:  hsl(0, 0%, 86%) !important;
+    border-color: hsl(0, 0%, 86%) !important;
+}
+
+@media (max-width: 530px) {
+    .calculator {
+        width: 320px;
+    }
+
+    input {
+        width: 80px;
+    }
+
+    .column {
+        margin: 0;
+    }
+
+    .form {
+        justify-content: space-around;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .empty {
+        font-size: 7px;
+    }
 }
 
 @font-face {
@@ -144,7 +174,6 @@ span {
     font-family: Poppins-BoldItalic;
     src: url("assets/fonts/Poppins-BoldItalic.ttf");
 }
-
 
 
 @font-face {
