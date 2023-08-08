@@ -6,6 +6,7 @@
 
 body {
     background: hsl(0, 0%, 94%);
+    overflow: hidden;
 }
 
 .calculator {
@@ -163,6 +164,11 @@ span {
     .empty {
         font-size: 7px;
     }
+
+    .form::after {
+        width: 270px;
+    }
+
 }
 
 @font-face {
